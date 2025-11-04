@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"; // ✅ This line is REQUIRED
+import { Link } from "react-router-dom";
 import { Badge } from "@mui/material";
 import { styled } from '@mui/material/styles';
 import IconButton from '@mui/material/IconButton';
@@ -6,7 +6,8 @@ import { MdOutlineShoppingCart } from "react-icons/md";
 import { IoMdGitCompare } from "react-icons/io";
 import { FaRegHeart } from "react-icons/fa6";
 import Tooltip from '@mui/material/Tooltip';
-
+import Search from './Search';
+import logo from '../assets/logo.png';
 
 
 
@@ -51,10 +52,10 @@ const Header = () => {
             <div className="header py-1 border-b border-gray-200">
                 <div className="container flex items-center justify-between">
                     <div className="col1 w-[25%]">
-                        <Link to={'/'}><img src="src/assets/logo.png" /></Link>
+                        <Link to={'/'}><img src={logo} /></Link>
                     </div>
 
-                    <div className="col1 w-[45%]">hii</div>
+                    <div className="col1 w-[45%]"><Search /></div>
 
                     <div className="col1 w-[30%] flex items-center pl-7">
                         <ul className="flex items-center justify-end gap-3 w-full">
@@ -65,7 +66,7 @@ const Header = () => {
                             <li>
                                 <Tooltip title="Compare">
                                     <IconButton aria-label="cart">
-                                        <StyledBadge badgeContent={4} color="secondary">
+                                        <StyledBadge badgeContent={1} color="secondary">
                                             <IoMdGitCompare />
 
                                         </StyledBadge>
@@ -76,7 +77,7 @@ const Header = () => {
                             <li>
                                 <Tooltip title="Cart">
                                     <IconButton aria-label="cart">
-                                        <StyledBadge badgeContent={4} color="secondary">
+                                        <StyledBadge badgeContent={1} color="secondary">
                                             <MdOutlineShoppingCart />
 
                                         </StyledBadge>
@@ -87,7 +88,7 @@ const Header = () => {
                             <li>
                                 <Tooltip title="Wishlist">
                                     <IconButton aria-label="cart">
-                                        <StyledBadge badgeContent={4} color="secondary">
+                                        <StyledBadge badgeContent={1} color="secondary">
                                             <FaRegHeart />
                                         </StyledBadge>
                                     </IconButton>
