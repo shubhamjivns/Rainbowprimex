@@ -5,10 +5,10 @@ import "swiper/css/navigation";
 import './Swiper.css';
 
 const products = [
-    { name: "Smart LED Bulb", img: "/images/bulb.jpg", price: "₹499" },
-    { name: "LED Tube Light", img: "/images/tube.jpg", price: "₹899" },
-    { name: "Decorative Lamp", img: "/images/lamp2.jpg", price: "₹1299" },
-    { name: "Ceiling Panel Light", img: "/images/panel.jpg", price: "₹1599" },
+    { name: "Smart LED Bulb", img: "src/assets/lightbulb.jpg", price: "₹499" },
+    { name: "LED Tube Light", img: "src/assets/tubelight1.jpg", price: "₹899" },
+    { name: "Decorative Lamp", img: "src/assets/Decoration-lamp.png", price: "₹1299" },
+    { name: "Ceiling Panel Light", img: "src/assets/panel-light2.jpg", price: "₹1599" },
 ];
 
 const ProductSlider = () => {
